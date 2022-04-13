@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>E-deology Generator 1.0<</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+<!--
+// Create an array of the links to choose from:
+var links = new Array();
+links[0] = "falc.html";
+links[1] = "transhumanist.html";
+links[2] = "lib.html";
+links[3] = "neocon.html";
+links[5]="anarcho.html";
+links[6]="ford.html";
+
+function openLink() {
+  // Chooses a random link:
+  var i = Math.floor(Math.random() * links.length);
+  // Directs the browser to the chosen target:
+  parent.location = links[i];
+  return false;
+}
+//-->
+</script>
+	
+
+		<div id="title">
+			<a href="">E-deology Generator 1.0</a>
+		</div>
+		<a href="#" class="gen" onClick="openLink();">Generate</a>
+		<a class="inst" href="data/E-deology_Generator_1.0.pdf">Instructions</a>
+		<a class="rotate" href="info.html">Info</a>
+	</body>
+</html>
